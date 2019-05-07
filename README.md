@@ -1,4 +1,4 @@
-SmartClass API Documentation
+###SmartClass API Documentation
 
 All requests should be sent to the school instance url which might be something like below.
 https://schoolid.smartclass.school/public/v1/
