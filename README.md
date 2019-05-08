@@ -117,34 +117,34 @@ print(response.text)
 ```
 var http = require("https");
 var options = {
-"method": "GET",
-"hostname": [
-"demo",
-"dmartclass",
-"tech"
-],
-"path": [
-"public",
-"v1",
-"authentication"
-],
-"headers": {
-"schoolId": "11",
-"Authorization": "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
-"Cache-Control": "no-cache",
-}
+	"method": "GET",
+	"hostname": [
+		"demo",
+		"dmartclass",
+		"tech"
+	],
+	"path": [
+		"public",
+		"v1",
+		"authentication"
+	],
+	"headers": {
+		"schoolId": "11",
+		"Authorization": "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
+		"Cache-Control": "no-cache",
+	}
 };
 var req = http.request(options, function (res) {
 var chunks = [];
 
 res.on("data", function (chunk) {
-chunks.push(chunk);
+	chunks.push(chunk);
 });
 
 res.on("end", function () {
-var body = Buffer.concat(chunks);
-console.log(body.toString());
-});
+	var body = Buffer.concat(chunks);
+	console.log(body.toString());
+	});
 });
 
 req.end();
