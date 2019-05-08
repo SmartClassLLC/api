@@ -97,8 +97,9 @@ request["Cache-Control"] = 'no-cache'
 
 response = http.request(request)
 puts response.read_body
-
+```
 #### Python Requests
+```
 import requests
 url = "https://development.smartclass.tech/public/v1/authentication"
 
