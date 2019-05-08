@@ -1,4 +1,4 @@
-## General
+# General
 General information about the school like name, address, phone, logo, icon, etc.
 
 **GET: https://schoolid.smartclass.school/public/v1/general**
