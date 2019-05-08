@@ -33,19 +33,18 @@ curl -X GET \
 #### jQuery
 ```
 var settings = {
-"async": true,
-"crossDomain": true,
-"url": "https://development.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx",
-"method": "GET",
-"headers": {
-"schoolId": "11",
-"Authorization": "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
-"Cache-Control": "no-cache",
-}
+	"async": true,
+	"crossDomain": true,
+	"url": "https://dev.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx",
+	"method": "GET",
+	"headers": {
+	"schoolId": "11",
+	"Authorization": "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
+	"Cache-Control": "no-cache",
 }
 
 $.ajax(settings).done(function (response) {
-console.log(response);
+	console.log(response);
 });
 ```
 
@@ -56,18 +55,18 @@ console.log(response);
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-CURLOPT_URL => "https://development.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx",
-CURLOPT_RETURNTRANSFER => true,
-CURLOPT_ENCODING => "",
-CURLOPT_MAXREDIRS => 10,
-CURLOPT_TIMEOUT => 30,
-CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-CURLOPT_CUSTOMREQUEST => "GET",
-CURLOPT_HTTPHEADER => array(
-"Authorization: Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
-"Cache-Control: no-cache",
-"schoolId: 11"
-),
+		CURLOPT_URL => "https://development.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx",
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_ENCODING => "",
+		CURLOPT_MAXREDIRS => 10,
+		CURLOPT_TIMEOUT => 30,
+		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+		CURLOPT_CUSTOMREQUEST => "GET",
+		CURLOPT_HTTPHEADER => array(
+		"Authorization: Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
+		"Cache-Control: no-cache",
+		"schoolId: 11"
+	),
 ));
 
 $response = curl_exec($curl);
@@ -76,9 +75,9 @@ $err = curl_error($curl);
 curl_close($curl);
 
 if ($err) {
-echo "cURL Error #:" . $err;
+	echo "cURL Error #:" . $err;
 } else {
-echo $response;
+	echo $response;
 }
 ```
 
