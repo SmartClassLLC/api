@@ -98,6 +98,7 @@ request["Cache-Control"] = 'no-cache'
 response = http.request(request)
 puts response.read_body
 ```
+
 #### Python Requests
 ```
 import requests
@@ -105,9 +106,9 @@ url = "https://development.smartclass.tech/public/v1/authentication"
 
 querystring = {"userId":"xxx","userPassword":"xxx"}
 headers = {
-'schoolId': "11",
-'Authorization': "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
-'Cache-Control': "no-cache",
+	'schoolId': "11",
+	'Authorization': "Bearer c3pgvLKqqrGQTWOASriiIU8czlBAzrujw5hcuiogJC4",
+	'Cache-Control': "no-cache",
 }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
@@ -185,27 +186,22 @@ IRestResponse response = client.Execute(request);
 
 #### Java
 ```
-HttpResponse<String> response = Unirest.get("
-https://dev.smartclass.tech/public/v1/authentication
-")
+HttpResponse<String> response = Unirest.get("https://dev.smartclass.tech/public/v1/authentication")
 .header("schoolId", "11")
 .header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NDQ2ODg2ODg2fQ.UEw0PxG4bl2BOV3FOkBRe6EoLb5aX6DLNOYDuubfS1L")
 .asString();
 ```
 
-- or -
+- or
 
 ```
 OkHttpClient client = new OkHttpClient();
 
 Request request = new Request.Builder()
-.url("
-https://dev.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx
-")
+.url("https://dev.smartclass.tech/public/v1/authentication?userId=xxx&userPassword=xxx")
 .get()
 .addHeader("schoolId", "11")
 .addHeader("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NDQ2ODg2ODg2fQ.UEw0PxG4bl2BOV3FOkBRe6EoLb5aX6DLNOYDuubfS1L")
-
 .build();
 
 Response response = client.newCall(request).execute();
