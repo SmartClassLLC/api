@@ -13,16 +13,48 @@ schoolId | Required | string | School ID of the Authorization Token
 
 ### Sample Successful Response
 ```
-{
-    "english": "English",
-    "spanish": "Español",
-    "turkish": "Türkçe",
-    "arabic": "الأسبانية",
-    "french": "Français",
-    "german": "Deutsche",
-    "chinese": "中文",
-    "russian": "русский"
-}
+[
+    {
+        "language": "english",
+        "langTitle": "English",
+        "flag": "https://schst.in/english"
+    },
+    {
+        "language": "spanish",
+        "langTitle": "Español",
+        "flag": "https://schst.in/spanish"
+    },
+    {
+        "language": "turkish",
+        "langTitle": "Türkçe",
+        "flag": "https://schst.in/turkish"
+    },
+    {
+        "language": "arabic",
+        "langTitle": "العربية",
+        "flag": "https://schst.in/arabic"
+    },
+    {
+        "language": "french",
+        "langTitle": "Français",
+        "flag": "https://schst.in/french"
+    },
+    {
+        "language": "german",
+        "langTitle": "Deutsch",
+        "flag": "https://schst.in/german"
+    },
+    {
+        "language": "chinese",
+        "langTitle": "中文",
+        "flag": "https://schst.in/chinese"
+    },
+    {
+        "language": "russian",
+        "langTitle": "Pусский",
+        "flag": "https://schst.in/russian"
+    }
+]
 ```
 
 
