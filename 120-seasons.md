@@ -13,7 +13,8 @@ schoolId | Required | string | School ID of the Authorization Token
 
 Path Parameter | Required/Optional | Data Type | Explanation
 -------------- | ----------------- | --------- | -----------
-userId | Required | string | Authorization Token
+userId | Required | string | User ID of the user that will be authenticated
+userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
 
 ### Sample Successful Response
 ```
