@@ -21,31 +21,26 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
 {
     "currentSchool": {
         "schoolId": 0,
-        "schoolName": "Genel Müdürlük"
+        "schoolName": "Headquarters"
     },
     "campuses": [
         {
             "Id": 1,
-            "campusTitle": "İstanbul Maslak",
+            "campusTitle": "Maslak",
             "schools": [
                 {
                     "schoolId": 1,
-                    "schoolName": "İlkokul"
+                    "schoolName": "Primary"
                 },
                 {
                     "schoolId": 2,
-                    "schoolName": "Ortaokul"
+                    "schoolName": "Secondary"
                 }
             ]
         },
         {
             "Id": 2,
-            "campusTitle": "İstanbul Çamlıca",
-            "schools": []
-        },
-        {
-            "Id": 5,
-            "campusTitle": "İstanbul Kadıköy",
+            "campusTitle": "Maryland",
             "schools": []
         },
         {
@@ -54,11 +49,11 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
             "schools": [
                 {
                     "schoolId": 3,
-                    "schoolName": "NCCAKY"
+                    "schoolName": "Kindergarten"
                 },
                 {
                     "schoolId": 19,
-                    "schoolName": "YMCA Quebec"
+                    "schoolName": "A College"
                 }
             ]
         }
