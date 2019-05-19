@@ -72,13 +72,13 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
 
 Updates read status of a notification.
 
-**GET: https://schoolid.smartclass.school/public/v1/notifications/:id**
+**PUT: https://schoolid.smartclass.school/public/v1/notifications/:id**
 
 Path Parameter | Required/Optional | Data Type | Explanation
 -------------- | ----------------- | --------- | -----------
 id | Required | string | Notification Id
 userId | Required | string | User ID
-msgRead | Required | enum(0, 1) | Read or unread info of the notification. If not sent, it will be treated as 1
+msgRead | Optional | enum(0, 1) | Read or unread info of the notification. If not sent, it will be treated as 1
 userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
 
 ### Sample Successful Response
@@ -87,5 +87,28 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
     "message": {
         "success": "Saved."
     }
+}
+```
+
+## Create A Notification
+
+**POST: https://schoolid.smartclass.school/public/v1/notifications**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+-------------- | ----------------- | --------- | -----------
+userId | Required | string | User ID
+userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
+
+Post Parameter | Required/Optional | Data Type | Explanation
+-------------- | ----------------- | --------- | -----------
+title | Required | string | Title of the notification
+content | Required | string | Body of the notification
+
+### Sample Successful Response
+```
+{
+    "message": {
+        "success": "Your message has been sent successfully !"
+    },
 }
 ```
