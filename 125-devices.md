@@ -24,7 +24,7 @@ deviceId | Required | string | Device ID of the device to be added
 ```
 {
     "message": {
-        "success": "Your message has been sent successfully !"
+        "success": "Saved"
     },
 }
 ```
