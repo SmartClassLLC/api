@@ -40,3 +40,52 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
     "nodataText": "Hepsi bu kadar!<br>Yeni bildirim yok."
 }
 ```
+
+## Get A Notification Info
+
+**GET: https://schoolid.smartclass.school/public/v1/notifications/:id**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+-------------- | ----------------- | --------- | -----------
+id | Required | string | Notification Id
+userId | Required | string | User ID
+userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
+
+### Sample Successful Response
+```
+{
+    "notification": {
+        "id": 8482,
+        "attachment": "",
+        "subject": "Şifre Değiştirme",
+        "msgBody": "Sayın Şimşek, Kullanıcı şifreniz değiştirilmiştir.<br><br>Eğer siz değiştirmediyseniz lütfen sistem yöneticinize haber veriniz.",
+        "fromUser": "support@smartclass.email",
+        "toUser": "simsek",
+        "ccUser": "",
+        "sentTime": "19.04.2019 04:34",
+        "schoolId": 0
+    }
+}
+```
+
+## Update A Notification
+
+Updates read status of a notification.
+
+**GET: https://schoolid.smartclass.school/public/v1/notifications/:id**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+-------------- | ----------------- | --------- | -----------
+id | Required | string | Notification Id
+userId | Required | string | User ID
+msgRead | Required | enum(0, 1) | Read or unread info of the notification. If not sent, it will be treated as 1
+userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
+
+### Sample Successful Response
+```
+{
+    "message": {
+        "success": "Saved."
+    }
+}
+```
