@@ -7,9 +7,9 @@ Authorization | Required | string | Authorization Token
 schoolId | Required | string | School ID of the Authorization Token
 
 
-## Get List
+## List Notifications
 
-**GET: https://schoolid.smartclass.school/public/v1/seasons**
+**GET: https://schoolid.smartclass.school/public/v1/notifications**
 
 Path Parameter | Required/Optional | Data Type | Explanation
 -------------- | ----------------- | --------- | -----------
@@ -19,63 +19,24 @@ userLanguage | Optional | string | Language of the user. If not sent, school def
 ### Sample Successful Response
 ```
 {
-    "currentSchool": {
-        "schoolId": 0,
-        "schoolName": "Headquarters"
-    },
-    "campuses": [
+    "notifications": [
         {
-            "Id": 1,
-            "campusTitle": "Maslak",
-            "schools": [
-                {
-                    "schoolId": 1,
-                    "schoolName": "Primary"
-                },
-                {
-                    "schoolId": 2,
-                    "schoolName": "Secondary"
-                }
-            ]
+            "id": 8482,
+            "subject": "Şifre Değiştirme",
+            "msgBody": "Sayın Şimşek, Kullanıcı şifreniz değiştirilmiştir.<br><br>Eğer siz değiştirmediyseniz lütfen sistem yöneticinize haber veriniz.",
+            "fromUser": "support@smartclass.email",
+            "sentTime": "19.04.2019 04:34",
+            "msgRead": "0"
         },
         {
-            "Id": 2,
-            "campusTitle": "Maryland",
-            "schools": []
-        },
-        {
-            "Id": 12,
-            "campusTitle": "Washington",
-            "schools": [
-                {
-                    "schoolId": 3,
-                    "schoolName": "Kindergarten"
-                },
-                {
-                    "schoolId": 19,
-                    "schoolName": "A College"
-                }
-            ]
+            "id": 6613,
+            "subject": "Görev Atandı",
+            "msgBody": "Görev Atandı [Toplantı Kararları [deneme toplantısı]]",
+            "fromUser": "345232345",
+            "sentTime": "13.10.2018 21:49",
+            "msgRead": "0"
         }
     ],
-    "schools": [],
-    "seasons": [
-        {
-            "season": "2018-2019",
-            "database": "dev_2018_2019"
-        },
-        {
-            "season": "2017-2018",
-            "database": "dev_2017_2018"
-        },
-        {
-            "season": "2016-2017",
-            "database": "dev_2016_2017"
-        },
-        {
-            "season": "2015-2016",
-            "database": "dev_2015_2016"
-        }
-    ]
+    "nodataText": "Hepsi bu kadar!<br>Yeni bildirim yok."
 }
 ```
