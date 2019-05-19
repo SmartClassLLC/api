@@ -112,3 +112,22 @@ content | Required | string | Body of the notification
     },
 }
 ```
+
+## Delete A Notification
+
+**DELETE: https://schoolid.smartclass.school/public/v1/notifications/:id**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+-------------- | ----------------- | --------- | -----------
+id | Required | string | Notification ID
+userId | Required | string | User ID
+userLanguage | Optional | string | Language of the user. If not sent, school default language will be considered.
+
+### Sample Successful Response
+```
+{
+    "message": {
+        "success": "Deleted"
+    }
+}
+```
