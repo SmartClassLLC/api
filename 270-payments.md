@@ -11,6 +11,11 @@ schoolId | Required | string | School ID of the Authorization Token
 
 **GET: https://schoolid.smartclass.school/public/v1/payments**
 
+Parameter | Required/Optional | Data Type | Explanation
+------ | ----------------- | --------- | -----------
+stdId | Required | string | Student ID
+
+
 ### Sample Successful Response
 ```
 [
