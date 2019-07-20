@@ -79,6 +79,7 @@ isDownPayment | Required | string | is Down Payment
     {
     "message": {
         "success": "Saved."
+        }
     }
 ]
 ```
@@ -104,6 +105,7 @@ isDownPayment | Required | string | is Down Payment
     {
     "message": {
         "success": "Saved."
+        }
     }
 ]
 ```
@@ -123,7 +125,7 @@ paymentId | Required | string | Payment ID
     {
     "message": {
         "success": "Deleted"
+        }
     }
-}
 ]
 ```
