@@ -61,4 +61,69 @@ stdId | Required | string | Student ID
     }
 ]
 ```
+## Create Payments
 
+**POST: https://schoolid.smartclass.school/public/v1/payments**
+
+Body Parameter | Required/Optional | Data Type | Explanation
+------ | ----------------- | --------- | -----------
+stdId | Required | string | Student ID
+schoolId | Required | string | School ID
+paymentAmount | Required | string | Payment Amount
+notes | Required | string | Payment Notes
+isDownPayment | Required | string | is Down Payment
+
+### Sample Successful Response
+```
+[
+    {
+    "message": {
+        "success": "Saved."
+    }
+]
+```
+
+## Update Payments
+
+**PUT: https://schoolid.smartclass.school/public/v1/payments**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+------ | ----------------- | --------- | -----------
+stdId | Required | string | Student ID
+paymentId | Required | string | Payment ID
+
+Body Parameter | Required/Optional | Data Type | Explanation
+------ | ----------------- | --------- | -----------
+paymentAmount | Required | string | Payment Amount
+notes | Required | string | Payment Notes
+isDownPayment | Required | string | is Down Payment
+
+### Sample Successful Response
+```
+[
+    {
+    "message": {
+        "success": "Saved."
+    }
+]
+```
+
+## Delete Payments
+
+**DELETE: https://schoolid.smartclass.school/public/v1/payments**
+
+Path Parameter | Required/Optional | Data Type | Explanation
+------ | ----------------- | --------- | -----------
+stdId | Required | string | Student ID
+paymentId | Required | string | Payment ID
+
+### Sample Successful Response
+```
+[
+    {
+    "message": {
+        "success": "Deleted"
+    }
+}
+]
+```
