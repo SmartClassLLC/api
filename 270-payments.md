@@ -20,45 +20,41 @@ stdId | Required | string | Student ID
 ```
 [
     {
-        "language": "english",
-        "langTitle": "English",
-        "flag": "https://schst.in/english"
+    "message": {
+        "success": "Loaded!"
     },
-    {
-        "language": "spanish",
-        "langTitle": "Español",
-        "flag": "https://schst.in/spanish"
-    },
-    {
-        "language": "turkish",
-        "langTitle": "Türkçe",
-        "flag": "https://schst.in/turkish"
-    },
-    {
-        "language": "arabic",
-        "langTitle": "العربية",
-        "flag": "https://schst.in/arabic"
-    },
-    {
-        "language": "french",
-        "langTitle": "Français",
-        "flag": "https://schst.in/french"
-    },
-    {
-        "language": "german",
-        "langTitle": "Deutsch",
-        "flag": "https://schst.in/german"
-    },
-    {
-        "language": "chinese",
-        "langTitle": "中文",
-        "flag": "https://schst.in/chinese"
-    },
-    {
-        "language": "russian",
-        "langTitle": "Pусский",
-        "flag": "https://schst.in/russian"
-    }
+    "payments": [
+        {
+            "paymentAmount": "4500.000",
+            "paymentDateTime": "2019-05-29 01:10:00",
+            "paymentTypeId": 0,
+            "paymentType": null,
+            "paymentReceiver": "simsek"
+        },
+        {
+            "paymentAmount": "4500.000",
+            "paymentDateTime": "2019-05-30 17:40:00",
+            "paymentTypeId": 0,
+            "paymentType": null,
+            "paymentReceiver": "simsek"
+        },
+        {
+            "paymentAmount": "4500.000",
+            "paymentDateTime": "2019-06-10 05:55:32",
+            "paymentTypeId": 0,
+            "paymentType": null,
+            "paymentReceiver": "simsek"
+        },
+        {
+            "paymentAmount": "4500.000",
+            "paymentDateTime": "2019-05-30 17:40:00",
+            "paymentTypeId": 0,
+            "paymentType": null,
+            "paymentReceiver": "simsek"
+        }
+    ],
+    "nofPayments": 4
+}
 ]
 ```
 ## Create Payments
