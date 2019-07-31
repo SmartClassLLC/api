@@ -17,7 +17,7 @@ schoolId | Required | string | School ID of the Authorization Token
     "message": {
         "success": "Loaded!"
     },
-    "payments": [
+    "paymentTypes": [
         {
             "paymentID": 1,
             "paymentType": "Cash"
