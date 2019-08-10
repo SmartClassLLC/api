@@ -17,7 +17,7 @@ schoolId | Required | string | School ID of the Authorization Token
     "message": {
         "success": "Loaded!"
     },
-    "subjects": [
+    "causeOfAbsences": [
         {
             "causeID": 1,
             "causeSymbol": "L",
